@@ -1,0 +1,30 @@
+
+TASK
+
+Functional API Test
+This involves setting up a functional test against a web API. You can use any tool you
+see fit for the task, if you are not sure which tool to use you should or do not have
+access to one, you should write about how you would go about it in as much detail as
+possible. It is expected that this could be completed within 30 mins.
+
+Test Case
+URL: https://www.kurtosys.com
+• Add an assertion that the response status received was “200”
+• Add an assertion to ensure that the response time is less than 2 seconds
+• Add an assertion for the server header having a value of Cloudflare
+
+How to run
+
+1. Open terminal
+2. Ensure the project directory is correctly shown and the environment is activated.
+3. You run the tests by navigating to the project directory
+4. Run pytest --html=report.html --self-contained-html
+4. The command will run pytest test cases that are written under tests package.
+5. You may not run the command as I have already generated the report.html, you can view the results using any browser
+
+Project Structure
+1. Page Object Model design is used
+2. On the "src" package I keep Pages that will summarise API interactions like base url, GET, POST, PUT or DELETE calls
+3. All test cases are created on "tests" packages
+
+
